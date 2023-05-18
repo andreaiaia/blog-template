@@ -1,8 +1,8 @@
-![License GNU GPL](https://img.shields.io/github/license/andreaiaia/blog)
-![Repo size badge](https://img.shields.io/github/repo-size/andreaiaia/blog)
-![Open Issues](https://img.shields.io/github/issues/andreaiaia/blog)
-![Version](https://img.shields.io/github/package-json/v/andreaiaia/blog)
-![Last Commit](https://img.shields.io/github/last-commit/andreaiaia/blog)
+![License GNU GPL](https://img.shields.io/github/license/andreaiaia/blog-template)
+![Repo size badge](https://img.shields.io/github/repo-size/andreaiaia/blog-template)
+![Open Issues](https://img.shields.io/github/issues/andreaiaia/blog-template)
+![Version](https://img.shields.io/github/package-json/v/andreaiaia/blog-template)
+![Last Commit](https://img.shields.io/github/last-commit/andreaiaia/blog-template)
 
 # blog-template
 
