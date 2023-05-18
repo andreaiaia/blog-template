@@ -5,10 +5,13 @@ The template I based my blog on
 # TODO
 
 - Add generic logo.svg
-
 - add generic image for markdown sample post
-
 - add generic image for document.js socials previews
+
+- update the structure to be a homepage with all the posts and an about page (remove the homepage or make it optional)
+- change the font
+- change the color palette
+- Create a SEO component to add on top of all the pages
 
 # Deploy your own
 
