@@ -1,3 +1,9 @@
+![License GNU GPL](https://img.shields.io/github/license/andreaiaia/blog)
+![Repo size badge](https://img.shields.io/github/repo-size/andreaiaia/blog)
+![Open Issues](https://img.shields.io/github/issues/andreaiaia/blog)
+![Version](https://img.shields.io/github/package-json/v/andreaiaia/blog)
+![Last Commit](https://img.shields.io/github/last-commit/andreaiaia/blog)
+
 # blog-template
 
 The template I based my blog on
