@@ -1,9 +1,10 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import { BLOG } from '../blog.config';
 
 export default function Document() {
   const meta = {
-    title: 'Your name',
-    description: 'Template blog.',
+    title: `${BLOG.NAME}`,
+    description: `${BLOG.DESCRIPTION}`,
     image: '/images/',
   };
 

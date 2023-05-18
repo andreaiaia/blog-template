@@ -10,6 +10,8 @@ import Button from '../components/Button';
 
 import css from '../styles/Home.module.scss';
 
+import { BLOG } from '../blog.config';
+
 export async function getStaticProps() {
   const postsData = await getLatestPostsData();
 
@@ -23,15 +25,17 @@ const Home = ({ postsData }) => {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Home | {BLOG.NAME}</title>
         <meta property="og:title" content="homepage" key="title" />
       </Head>
       <main>
         <Hero cname={css.hero} background="transparent">
           <div className={css.greetings}>
-            <h1>Hello, my name is YOUR NAME</h1>
+            <h1>
+              Hello, my name is {BLOG.OWNER.FIRST_NAME} {BLOG.OWNER.LAST_NAME}
+            </h1>
             <p>
-              Your <span className={css.accent}>description</span>.
+              Your <span className={css.accent}>catchphrase</span>.
             </p>
             <div className={css.CTAs}>
               <Button className={css.homeCta}>

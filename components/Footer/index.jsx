@@ -1,11 +1,21 @@
 import React, { useEffect, useState } from 'react';
 
-import { GitHub, Instagram, Linkedin, Rss } from 'react-feather';
+import {
+  GitHub,
+  Instagram,
+  Linkedin,
+  Dribbble,
+  Twitter,
+  Facebook,
+  Rss,
+} from 'react-feather';
 
-import ThemeSwitcher from '../ThemeSwitcher';
+import ThemeSwitcher from '/components/ThemeSwitcher';
 import NotByAi from './NotByAi';
 
 import css from './Footer.module.scss';
+
+import { BLOG } from '../../blog.config.js';
 
 const Footer = () => {
   const [mounted, setMounted] = useState(false);
@@ -27,24 +37,51 @@ const Footer = () => {
               <Rss className={css.icon} alt="RSS feed" />
             </a>
           </li>
-          <li>
-            <a href="https://instagram.com/" target="_blank">
-              <Instagram className={css.icon} alt="Instagram logo" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/" target="_blank">
-              <GitHub className={css.icon} alt="Github logo" />
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/" target="_blank">
-              <Linkedin className={css.icon} alt="Linkedin logo" />
-            </a>
-          </li>
+          {BLOG.SOCIALS.INSTAGRAM && (
+            <li>
+              <a href={BLOG.SOCIALS.INSTAGRAM} target="_blank">
+                <Instagram className={css.icon} alt="Instagram profile" />
+              </a>
+            </li>
+          )}
+          {BLOG.SOCIALS.TWITTER && (
+            <li>
+              <a href={BLOG.SOCIALS.TWITTER} target="_blank">
+                <Twitter className={css.icon} alt="Twitter profile" />
+              </a>
+            </li>
+          )}
+          {BLOG.SOCIALS.FACEBOOK && (
+            <li>
+              <a href={BLOG.SOCIALS.FACEBOOK} target="_blank">
+                <Facebook className={css.icon} alt="Twitter profile" />
+              </a>
+            </li>
+          )}
+          {BLOG.SOCIALS.GITHUB && (
+            <li>
+              <a href={BLOG.SOCIALS.GITHUB} target="_blank">
+                <GitHub className={css.icon} alt="Github profile" />
+              </a>
+            </li>
+          )}
+          {BLOG.SOCIALS.DRIBBBLE && (
+            <li>
+              <a href={BLOG.SOCIALS.DRIBBBLE} target="_blank">
+                <Dribbble className={css.icon} alt="Dribbble profile" />
+              </a>
+            </li>
+          )}
+          {BLOG.SOCIALS.LINKEDIN && (
+            <li>
+              <a href={BLOG.SOCIALS.LINKEDIN} target="_blank">
+                <Linkedin className={css.icon} alt="LinkedIn profile" />
+              </a>
+            </li>
+          )}
         </ul>
         <small className={css.credits}>
-          <time>{YEAR}</time> © YOUR NAME.
+          <time>{YEAR}</time> © {BLOG.OWNER.FIRST_NAME} {BLOG.OWNER.LAST_NAME}.
         </small>
         <div>
           <ThemeSwitcher cname={css.switcherStyle} />
