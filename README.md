@@ -27,7 +27,7 @@ After the deploy make sure you read the [Initial setup](#initial-setup) section 
 
 [![Deploy on Vercel](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fandreaiaia%2Fblog-template&showOptionalTeamCreation=false)
 
-## Initial setup
+# Initial setup
 
 Once you've deployed your blog on vercel, you need to do some basic setup.
 
@@ -37,7 +37,7 @@ Now you can start writing your posts, you can find them in the `articles` folder
 
 To publish a post just **push** the changes to the main branch of your repository, Vercel will automatically deploy the new version of your blog with your new post.
 
-### Customizing the logo
+## Customize the logo
 
 The only time you will need to get your hand dirty with code is when you want to change the logo of your blog.
 
@@ -45,13 +45,13 @@ To customize the logo you have to add your custom `svg` image inside the Logo co
 
 Inside that folder you will also find another README.md file with more detailed instructions on how to customize the logo.
 
-### Customize the color palette
+## Customize the color palette
 
 To customize the color palette of your blog you need to edit the `_globals.module.scss` file in the `styles` folder.
 
 At the top of the file you will find a list of variables that you can change to customize the colors of your blog.
 
-### Customize the font
+## Customize the font
 
 To customize the font of your blog you need to make two steps:
 
