@@ -16,7 +16,6 @@ The template I based my blog on.
 
 # TODO
 
-- update the structure to be a homepage with all the posts and an about page (remove the homepage or make it optional)
 - Create a SEO component to add on top of all the pages
 - Remake the logo logic
 
@@ -71,4 +70,12 @@ For more customization the scss is there waiting for you.
 
 ## Nuts and bolts
 
+### Menu bar
+
 If you wish to customize the menu bar, you have to edit the pages variable in the `pages/_app.js` file.
+
+### Homepage
+
+The blog comes with a default homepage that displays the latest posts. If you want you can put this page (and move the scss file accordingly) in the `posts` folder and create a new homepage.
+
+You can use the homepage.jsx file as a starting point.
