@@ -18,6 +18,7 @@ The template I based my blog on.
 
 - update the structure to be a homepage with all the posts and an about page (remove the homepage or make it optional)
 - Create a SEO component to add on top of all the pages
+- Remake the logo logic
 
 # Deploy your own
 
@@ -67,3 +68,7 @@ Then to apply the fonts to all the elements of the blog you need to change the `
 If you want to use different fonts for the heading tags you can change the `font-family` property of the `h1`, `h2`, `h3`, `h4`, `h5`, `h6` rules.
 
 For more customization the scss is there waiting for you.
+
+## Nuts and bolts
+
+If you wish to customize the menu bar, you have to edit the pages variable in the `pages/_app.js` file.
