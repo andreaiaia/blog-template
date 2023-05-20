@@ -10,7 +10,7 @@ import Button from '../components/Button';
 
 import css from '../styles/Home.module.scss';
 
-import { BLOG } from '../blog.config';
+const BLOG = require('../blog.config');
 
 export async function getStaticProps() {
   const postsData = await getLatestPostsData();

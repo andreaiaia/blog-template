@@ -15,7 +15,7 @@ import NotByAi from './NotByAi';
 
 import css from './Footer.module.scss';
 
-import { BLOG } from '../../blog.config.js';
+const BLOG = require('../../blog.config');
 
 const Footer = () => {
   const [mounted, setMounted] = useState(false);

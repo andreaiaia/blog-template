@@ -6,7 +6,7 @@ const OWNER = {
   LAST_NAME: 'INSERT_LAST_NAME',
 };
 
-export const BLOG = {
+const BLOG = {
   OWNER,
   // Insert a name for your blog, the default uses your first name and last name
   NAME: `${OWNER.FIRST_NAME} ${OWNER.LAST_NAME}`,
@@ -25,3 +25,5 @@ export const BLOG = {
   // Example https://yourblog.com
   URL: 'INSERT_BLOG_URL',
 };
+
+module.exports = BLOG;
