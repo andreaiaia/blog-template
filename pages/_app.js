@@ -13,12 +13,12 @@ import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 export default function App({ Component, pageProps }) {
   const pages = [
     {
-      name: 'Home',
+      name: 'Blog',
       href: '/',
     },
     {
-      name: 'Blog',
-      href: '/posts',
+      name: 'About',
+      href: '/about',
     },
   ];
 
