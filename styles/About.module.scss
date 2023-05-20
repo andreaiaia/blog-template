@@ -1,0 +1,33 @@
+@use './_globals.module' as *;
+
+.hero {
+  padding: 6rem 0;
+  margin-top: 1rem;
+
+  h1 {
+    @include h2;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.bio {
+  @include container;
+  margin: 2rem auto;
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 1rem;
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.accent {
+  color: $primary-500;
+}
