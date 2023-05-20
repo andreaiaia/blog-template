@@ -5,7 +5,7 @@ export default function Document() {
   const meta = {
     title: `${BLOG.NAME}`,
     description: `${BLOG.DESCRIPTION}`,
-    image: '/images/',
+    image: '/images/matera.webp',
   };
 
   return (
