@@ -14,11 +14,6 @@
 
 The template I based my blog on.
 
-# TODO
-
-- Create a SEO component to add on top of all the pages
-- Remake the logo logic
-
 # Deploy your own
 
 With this template you can start blogging in minutes, just click the button below and your blog will be available online at `https://your-blog-name.vercel.app`.
@@ -39,11 +34,13 @@ To publish a post just **push** the changes to the main branch of your repositor
 
 ## Customize the logo
 
-The only time you will need to get your hand dirty with code is when you want to change the logo of your blog.
+To change the logo displayed in the header you need two png files, one for the light mode and one for the dark mode.
 
-To customize the logo you have to add your custom `svg` image inside the Logo component, you can find it in the `components/Logo` folder.
+Put these files in the `public` folder and name them `logo-light.png` and `logo-dark.png` respectively.
 
-Inside that folder you will also find another README.md file with more detailed instructions on how to customize the logo.
+If you think that your logo is good both for light and dark mode, you can put the same image in both files or alternatively you can go in the `Header` component and remove the logic that swaps the logo based on the theme.
+
+To change the size of the logo you need to edit the `Header.module.scss` file. A little experience with css is required. A handy workaround is to simply resize the logo files.
 
 ## Customize the color palette
 
