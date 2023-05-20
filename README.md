@@ -4,15 +4,11 @@
   </a>
 </p>
 
-<p align="center">
-
 ![License GNU GPL](https://img.shields.io/github/license/andreaiaia/blog-template)
 ![Repo size badge](https://img.shields.io/github/repo-size/andreaiaia/blog-template)
 ![Open Issues](https://img.shields.io/github/issues/andreaiaia/blog-template)
 ![Version](https://img.shields.io/github/package-json/v/andreaiaia/blog-template)
 ![Last Commit](https://img.shields.io/github/last-commit/andreaiaia/blog-template)
-
-</p>
 
 # blog-template
 
