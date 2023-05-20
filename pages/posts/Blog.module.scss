@@ -1,19 +1,5 @@
 @use '../../styles/_globals.module' as *;
 
-.hero {
-  padding: 6rem 0;
-  margin-top: 1rem;
-
-  p {
-    font-size: 1.2rem;
-  }
-
-  .title {
-    @include h2;
-    margin-top: 0;
-  }
-}
-
 .container {
   @include container;
   padding-top: 4rem;
@@ -23,28 +9,18 @@
   }
 }
 
-.posts {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-
-  @include tabletPortrait {
-    justify-content: space-evenly;
-  }
-}
-
 .progressBar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 0.5rem;
-  background-color: $primary-500;
+  background-color: $secondary-500;
   transform-origin: 0%;
   z-index: 1;
 
   @include dark {
-    background-color: $primary-500;
+    background-color: $secondary-500;
   }
 }
 
