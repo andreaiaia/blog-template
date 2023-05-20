@@ -42,6 +42,12 @@ If you think that your logo is good both for light and dark mode, you can put th
 
 To change the size of the logo you need to edit the `Header.module.scss` file. A little experience with css is required. A handy workaround is to simply resize the logo files.
 
+> ❗️ Remember to customize the favicon too!
+
+## Customize the About page
+
+Don't forget to open the About page and customize it a little. You can go as far as remaking it from scratch, or simply remove the Lorem Ipsum texts and write something about yourself.
+
 ## Customize the color palette
 
 To customize the color palette of your blog you need to edit the `_globals.module.scss` file in the `styles` folder.
