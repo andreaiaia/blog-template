@@ -64,7 +64,13 @@
     color: $primary-500;
 
     @include dark {
-      color: $primary-500;
+      color: $secondary-500;
+    }
+
+    @include laptop {
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 

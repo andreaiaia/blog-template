@@ -3,6 +3,7 @@
 .button {
   padding: 1rem;
   background-color: $primary-500;
+  color: $white;
   border: 2px solid $primary-500;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -16,8 +17,6 @@
   }
 
   @include dark {
-    color: $black;
-
     &:hover {
       box-shadow: 0 5px 10px -5px $primary-400;
     }
