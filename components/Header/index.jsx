@@ -4,17 +4,17 @@ import Navbar from '../Navbar';
 import ThemeSwitcher from '../ThemeSwitcher';
 import Logo from '../Logo';
 
-import styles from './Header.module.scss';
+import css from './Header.module.scss';
 import Link from 'next/link';
 
 const Header = ({ pages }) => {
   const [mounted, setMounted] = useState(false);
   const [prevScroll, setPrevScroll] = useState(0);
-  const [headerStyle, setHeaderStyle] = useState(styles.header);
+  const [headerStyle, setHeaderStyle] = useState(css.header);
   const headerStyles = {
-    top: `${styles.header}`,
-    hidden: `${styles.header} ${styles.hidden}`,
-    visible: `${styles.header} ${styles.background}`,
+    top: `${css.header}`,
+    hidden: `${css.header} ${css.hidden}`,
+    visible: `${css.header} ${css.background}`,
   };
 
   const handleScroll = () => {
@@ -39,14 +39,14 @@ const Header = ({ pages }) => {
 
   return (
     <header id="top" className={headerStyle}>
-      <div className={styles.container}>
-        <div className={styles.logo}>
+      <div className={css.container}>
+        <div className={css.logo}>
           <Link href="/">
             <Logo />
           </Link>
         </div>
         <Navbar pages={pages} />
-        <div className={styles.themeSwitcher}>
+        <div className={css.themeSwitcher}>
           <ThemeSwitcher />
         </div>
       </div>
