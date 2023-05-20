@@ -1,9 +1,10 @@
 import React from 'react';
-
-import { getSortedPostsData } from '/lib/posts';
+import Head from 'next/head';
 
 import { Post } from '/components/Thumbnails';
 import Hero from '/components/Hero';
+
+import { getSortedPostsData } from '/lib/posts';
 
 import css from '../styles/index.module.scss';
 
@@ -19,32 +20,41 @@ export async function getStaticProps() {
 
 const Blog = ({ allPostsData }) => {
   return (
-    <main>
-      <Hero cname={css.hero}>
-        <div>
-          <h1 className={css.title}>{BLOG.NAME}</h1>
-          <p>Welcome to my brand-new blog!</p>
-        </div>
-      </Hero>
-      <section className={css.container}>
-        <ul className={css.posts}>
-          {allPostsData.map(
-            ({ id, title, description, formattedDate, stats, pic }, index) => (
-              <li key={index}>
-                <Post
-                  slug={id}
-                  title={title}
-                  description={description}
-                  date={formattedDate}
-                  stats={stats}
-                  postPic={pic}
-                />
-              </li>
-            )
-          )}
-        </ul>
-      </section>
-    </main>
+    <>
+      <Head>
+        <title>{BLOG.NAME}</title>
+        <meta property="og:title" content="homepage" key="title" />
+      </Head>
+      <main>
+        <Hero cname={css.hero}>
+          <div>
+            <h1 className={css.title}>{BLOG.NAME}</h1>
+            <p>Welcome to my brand-new blog!</p>
+          </div>
+        </Hero>
+        <section className={css.container}>
+          <ul className={css.posts}>
+            {allPostsData.map(
+              (
+                { id, title, description, formattedDate, stats, pic },
+                index
+              ) => (
+                <li key={index}>
+                  <Post
+                    slug={id}
+                    title={title}
+                    description={description}
+                    date={formattedDate}
+                    stats={stats}
+                    postPic={pic}
+                  />
+                </li>
+              )
+            )}
+          </ul>
+        </section>
+      </main>
+    </>
   );
 };
 
