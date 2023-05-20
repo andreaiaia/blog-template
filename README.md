@@ -1,3 +1,5 @@
+<a href="#" style="display: block; margin: auto; width: 100%"><img width="auto" height="100px" src="logo.png" style="display: block; margin: 10px auto"/></a>
+
 ![License GNU GPL](https://img.shields.io/github/license/andreaiaia/blog-template)
 ![Repo size badge](https://img.shields.io/github/repo-size/andreaiaia/blog-template)
 ![Open Issues](https://img.shields.io/github/issues/andreaiaia/blog-template)
@@ -6,15 +8,11 @@
 
 # blog-template
 
-The template I based my blog on
+The template I based my blog on.
 
 # TODO
 
-- add generic image for markdown sample post
-- add generic image for document.js socials previews
-
 - update the structure to be a homepage with all the posts and an about page (remove the homepage or make it optional)
-- change the font
 - Create a SEO component to add on top of all the pages
 
 # Deploy your own
