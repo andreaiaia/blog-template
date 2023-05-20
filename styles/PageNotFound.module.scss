@@ -1,6 +1,27 @@
 @use './_globals.module' as *;
 @use './layout.scss' as *;
 
+.hero {
+  padding: 6rem 0;
+  margin-top: 1rem;
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    @include h2;
+    font-size: 6rem;
+    margin-top: 0;
+
+    color: $primary-700;
+
+    @include dark {
+      color: $primary-100;
+    }
+  }
+}
+
 .pageNotFound {
   margin-top: 1rem;
   padding: 6rem 0;
