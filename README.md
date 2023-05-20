@@ -10,13 +10,11 @@ The template I based my blog on
 
 # TODO
 
-- Add generic logo.svg
 - add generic image for markdown sample post
 - add generic image for document.js socials previews
 
 - update the structure to be a homepage with all the posts and an about page (remove the homepage or make it optional)
 - change the font
-- change the color palette
 - Create a SEO component to add on top of all the pages
 
 # Deploy your own
@@ -36,3 +34,34 @@ In the file `blog.config.js` you need to change values of the OWNER and BLOG var
 Now you can start writing your posts, you can find them in the `articles` folder, delete the sample post and start writing your own.
 
 To publish a post just **push** the changes to the main branch of your repository, Vercel will automatically deploy the new version of your blog with your new post.
+
+### Customizing the logo
+
+The only time you will need to get your hand dirty with code is when you want to change the logo of your blog.
+
+To customize the logo you have to add your custom `svg` image inside the Logo component, you can find it in the `components/Logo` folder.
+
+Inside that folder you will also find another README.md file with more detailed instructions on how to customize the logo.
+
+### Customize the color palette
+
+To customize the color palette of your blog you need to edit the `_globals.module.scss` file in the `styles` folder.
+
+At the top of the file you will find a list of variables that you can change to customize the colors of your blog.
+
+### Customize the font
+
+To customize the font of your blog you need to make two steps:
+
+- Add the fonts you want to use in the `public/fonts` folder
+- Edit the `main.scss` file in the `styles` folder.
+
+Alternatively you can use a font from Google Fonts, in that case you just need to edit the `main.scss` file in the `styles` folder.
+
+In the `main.scss` you just need to change the `font-family` and the `src` properties of the `@font-face` rules.
+
+Then to apply the fonts to all the elements of the blog you need to change the `font-family` property of the `body` rule.
+
+If you want to use different fonts for the heading tags you can change the `font-family` property of the `h1`, `h2`, `h3`, `h4`, `h5`, `h6` rules.
+
+For more customization the scss is there waiting for you.
