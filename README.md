@@ -1,6 +1,8 @@
-<a href="#" align="center">
-  <img width="auto" height="100px" src="logo.png" />
-</a>
+<p align="center">  
+  <a href="#" style="margin: 10px">
+    <img width="auto" height="100px" src="logo.png" />
+  </a>
+</p>
 
 ![License GNU GPL](https://img.shields.io/github/license/andreaiaia/blog-template)
 ![Repo size badge](https://img.shields.io/github/repo-size/andreaiaia/blog-template)
